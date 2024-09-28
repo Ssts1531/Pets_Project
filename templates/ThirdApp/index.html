@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Paws 2 U</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="https://nsubbu123.pythonanywhere.com/static/images/logo1.png" rel="icon">
+  <link href="https://nsubbu123.pythonanywhere.com/static/images/logo1.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+      <link rel="stylesheet" href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/aos/aos.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/swiper/swiper-bundle.min.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/glightbox/css/glightbox.min.css' %}">
+
+ <!--
+  <link href="/templates/Static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/templates/Static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/templates/Static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/templates/Static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="/templates/Static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+-->
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="{% static '/css/main.css' %}">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/Home" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="https://nsubbu123.pythonanywhere.com/static/images/logo1.png" alt="logo1">
+        <h1 class="sitename">PAW 2 U</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Paw Breeds</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#full-gallery">Services</a></li>
+          <li class="dropdown"><span>Paw Care</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+            <ul>
+              <li><a href="#">Dog Health</a></li>
+              <li class="dropdown"><a href="#"><span>Nutration</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Food</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Dry Food</a></li>
+                      <li><a href="#">Wet Food</a></li>
+                    </ul>
+                  <li><a href="#">Bowls</a></li>
+                  <li><a href="#">Gravy</a></li>
+                  <li><a href="#">Treat</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Toys</a></li>
+              <li><a href="#">Beds & Mats</a></li>
+              <li><a href="#">Grooming</a></li>
+              <li><a href="#">Sports & Events</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="https://img.freepik.com/premium-photo/group-dogs-are-sitting-field_780838-1151.jpg?w=740" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2><br>"A dog is the only thing on earth that loves you more than he loves himself." 
+          <br></h2>
+          <p>– Josh <span class="typed" data-typed-items="Billings">Billings</span></p>
+     <!--
+        <div class="social-links">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+     -->
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 profile-img align-self-start">
+            <img src="https://media.istockphoto.com/id/170462856/photo/dog-working-comfortably-from-home.jpg?s=612x612&w=0&k=20&c=bkWU83XcvVdxQBvQmoqVNkM-zLZsGy4BZPWWQQqzMok=" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 content">
+            <h3>
+              Dogs are often celebrated as the most loyal and loving companions a person can have. Their unwavering devotion, boundless energy, and ability to sense human emotions make them an integral part of many families. </h3>
+            <br/><br/><br/>
+            <h3>"The bond with a true dog is as lasting as the ties of this earth will ever be."&nbsp;&nbsp;&nbsp;&nbsp;  – Konrad Lorenz
+            </h3>
+            <!--
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+            </ul>
+            -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Paw Breeds</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i><img src="https://supertails.com/cdn/shop/files/Frame_2187_1.png?crop=center&height=32&v=1702276497&width=32" alt=""></i></div>
+            <div>
+              <h4 class="title">German Shepherd</h4>
+              <p class="description">The German Shepherd is a highly intelligent, loyal, and versatile breed known for its courage, confidence, and work ethic.</p>
+              <a href="/service" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i><img src="https://supertails.com/cdn/shop/files/Frame_2187_1.png?crop=center&height=32&v=1702276497&width=32" alt=""></i></div>
+            <div>
+              <h4 class="title">Labrador Retriever</h4>
+              <p class="description">The Labrador Retriever is one of the most popular and beloved dog breeds worldwide, known for its friendly, outgoing, and high-spirited nature. </p>
+              <a href="/service" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i><img src="https://supertails.com/cdn/shop/files/Frame_2187_1.png?crop=center&height=32&v=1702276497&width=32" alt=""></i></div>
+            <div>
+              <h4 class="title">Golden Retriever</h4>
+              <p class="description">The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat. </p>
+              <a href="/service" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i><img src="https://supertails.com/cdn/shop/files/Frame_2187_1.png?crop=center&height=32&v=1702276497&width=32" alt=""></i></div>
+            <div>
+              <h4 class="title">Husky</h4>
+              <p class="description">Husky is a general term for a dog used in the polar regions, primarily and specifically for work as sled dogs.</p>
+              <a href="/service" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i><img src="https://supertails.com/cdn/shop/files/Frame_2187_1.png?crop=center&height=32&v=1702276497&width=32" alt=""></i></div>
+            <div>
+              <h4 class="title">Basset Hound</h4>
+              <p class="description">The Basset Hound is a short-legged breed of dog in the hound family. The Basset is a scent hound that was originally bred for the purpose of hunting hare. </p>
+              <a href="/service" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i><img src="https://supertails.com/cdn/shop/files/Frame_2187_1.png?crop=center&height=32&v=1702276497&width=32" alt=""></i></div>
+            <div>
+              <h4 class="title">Greyhound</h4>
+              <p class="description">The English Greyhound, is a breed of dog, a sighthound which has been bred for coursing, greyhound racing and hunting.</p>
+              <a href="/service" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+      </div>
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Trainers</h2>
+        <p>The only people who care that you faded the lure are other dog trainers. – Josh Moran</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://content3.jdmagicbox.com/comp/bilaspur-chhattisgarh/a7/9999p7752.7752.240531135049.y1a7/catalogue/indian-army-dog-trainer-bilaspur-chhattisgarh-dog-hostels-n47k54fava.jpg" class="testimonial-img" alt="">
+                <h3>Rakesh Mishra</h3>
+                <h4>Trainer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Until one has loved an animal a part of one's soul remains unawakened.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://static.wixstatic.com/media/041078_5170895a6dff4d59a4e230abd656e60a~mv2.jpeg/v1/crop/x_0,y_32,w_721,h_741/fill/w_539,h_554,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202020-05-14%20at%201_49_11%20PM.jpeg" class="testimonial-img" alt="">
+                <h3>Dr P K Chug (Retd)</h3>
+                <h4>Trainer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Money can buy you a fine dog, but only love can make him wag his tail.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://dogguru.in/wp-content/uploads/2022/03/2.jpg" class="testimonial-img" alt="">
+                <h3>Amrut Sridhara Hiranya</h3>
+                <h4>Trainer (Bangalore)</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A hungry dog hunts best. A hungrier dog hunts even better.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://lirp.cdn-website.com/130dc7bc/dms3rep/multi/opt/IMG_7150-a4ddcb0f-327w.jpeg" class="testimonial-img" alt="">
+                <h3>Evan Dunbar</h3>
+                <h4>K9 Trainer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A dog is the only thing on earth that loves you more than you love yourself.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://lirp.cdn-website.com/130dc7bc/dms3rep/multi/opt/Justin-Weaver-640w.jpg" class="testimonial-img" alt="">
+                <h3>Justin Weaver</h3>
+                <h4>Trainer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Dogs are not our whole life, but they make our lives whole.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>“The dogs never talk about themselves but listen to you while you talk about yourself, and keep up an appearance of being interested in the conversation.” &nbsp;&nbsp; &nbsp;   – Jerome K. Jerome</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Food</li>
+            <li data-filter=".filter-product">Toy Products</li>
+            <li data-filter=".filter-branding">Grooming</li>
+            <li data-filter=".filter-books">Accessories</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/products/MaxiAdult-1.png?v=1674795514" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Royal Canin</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/products/MaxiAdult-1.png?v=1674795514" title="Royal Canin" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://headsupfortails.com/cdn/shop/files/8906002482832.jpg?v=1715947995" title="Royal Canin" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/DSDGTY045_2.jpg?v=1718616230" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Rope Toys</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/DSDGTY045_2.jpg?v=1718616230" title="Rope Toys" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/HUFT3-in-1GroomingEssentialsComboForDogs.jpg-1.jpg?v=1719986191" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Grooming Essentials Combo</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/HUFT3-in-1GroomingEssentialsComboForDogs.jpg-1.jpg?v=1719986191" title="Grooming" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/DSC_4439.jpg?v=1699291581" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Bowls</h4>
+                   <a href="https://headsupfortails.com/cdn/shop/files/DSC_4439.jpg?v=1699291581" title="Bowls" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/0726684650620_74c8353c-a77b-48f0-81d6-4c0553c47295.jpg?v=1723196325" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Chewbarks</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/0726684650620_74c8353c-a77b-48f0-81d6-4c0553c47295.jpg?v=1723196325" title="Chewbarks" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/HUFT_Chewtastic_Puff_Chew_Toy_For_Dog_-_Orange_01.jpg?v=1725013618" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Chew Products</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="https://headsupfortails.com/cdn/shop/files/HUFT_Chewtastic_Puff_Chew_Toy_For_Dog_-_Orange_01.jpg?v=1725013618" title="Chew Products" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/HUFTPetGroomingFingerGlove-Orange_cc431215-20d5-45ba-b6b2-fad2208ae9de.jpg?v=1704859924" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Grooming Hand Gloves</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/HUFTPetGroomingFingerGlove-Orange_cc431215-20d5-45ba-b6b2-fad2208ae9de.jpg?v=1704859924" title="Grooming" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/DSDGCLH030_4_e40dc592-aaae-4563-bd9d-01a3cdfdfe9d.jpg?v=1720603782" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Dash Dog Flow Padded Collar</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/DSDGCLH030_4_e40dc592-aaae-4563-bd9d-01a3cdfdfe9d.jpg?v=1720603782" title="Flow Padded Collar" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/8906125484324.jpg?v=1714642044" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Drolls</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/8906125484324.jpg?v=1714642044" title="Drolls" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/files/DSC_1816_4f8973f1-829c-4f74-b30f-70cedfc91234.jpg?v=1710999737" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Fetch & Tug Toys</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/files/DSC_1816_4f8973f1-829c-4f74-b30f-70cedfc91234.jpg?v=1710999737" title="Toys" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="https://headsupfortails.com/cdn/shop/products/TrixieDogDentalHygieneSetwithToothpasteandBrush100gm.jpg?v=1637928550" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Dental Care</h4>
+                  <a href="https://headsupfortails.com/cdn/shop/products/TrixieDogDentalHygieneSetwithToothpasteandBrush100gm.jpg?v=1637928550" title="Dental" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/DSC_7671-2_400x.jpg?v=1707740939" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Beds</h4>
+                  <a href="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/DSC_7671-2_400x.jpg?v=1707740939" title="Beds" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!--Circle code -->
+    <section id="full-gallery" class="full-gallery">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>"A pet is not just a companion; they are family and unconditional love.” &nbsp;&nbsp; &nbsp; – John Doe</p>
+    </div><!-- End Section Title -->
+
+      <div class="image-gallery">
+        <div class="gallery-items">
+         <a href="/Maintain"><div class="item">
+            <img src="https://www.wikihow.com/images/thumb/9/9c/Register-Your-Dog-Step-1-Version-5.jpg/v4-460px-Register-Your-Dog-Step-1-Version-5.jpg.webp" alt="" />
+            <div class="item-title">
+              <div class="transparent-back"></div>
+              <div class="title-text"><p>Registration Your Pets</p><p>  </p></div>
+            </div>
+          </div></a>
+        </div>
+        <div class="gallery-items">
+          <a href="/Maintain"><div class="item">
+            <img src="https://www.akc.org/wp-content/uploads/2018/04/golden-training-body.jpg" alt="" />
+            <div class="item-title">
+              <div class="transparent-back"></div>
+              <div class="title-text"><p>Training & Behavior</p><p> </p></div>
+            </div>
+          </div></a>
+        </div>
+        <div class="gallery-items">
+          <a href="/Maintain"><div class="item">
+            <img src="https://www.petdrugsonline.co.uk/media/wysiwyg/Blog-Images/shutterstock_1397483636.jpg" alt=""/>
+            <div class="item-title">
+              <div class="transparent-back"></div>
+              <div class="title-text"><p>Health & Wellness</p><p> </p></div>
+            </div>
+          </div></a>
+        </div>
+        <div class="gallery-items">
+          <a href="/Maintain"><div class="item">
+            <img src="https://cdn1.epicgames.com/ue/product/Screenshot/8-1920x1080-c12fa3f2b5ab9fcdf7dd2f0182365cb8.png?resize=1&w=1920" alt="" />
+            <div class="item-title">
+              <div class="transparent-back"></div>
+              <div class="title-text"><p>Market Place</p><p> </p></div>
+            </div>
+          </div></a>
+        </div>
+        <div class="gallery-items">
+          <a href="/Maintain"> <div class="item">
+            <img src="https://i.ytimg.com/vi/yNMnRNDFTiQ/maxresdefault.jpg" alt=""/>
+            <div class="item-title">
+              <div class="transparent-back"></div>
+              <div class="title-text"><p>Shop Products</p><p> </p></div>
+            </div>
+          </div></a>
+        </div>
+        <div class="gallery-items">
+          <a href="/Maintain"><div class="item">
+            <img src="https://spiritdogtraining.com/wp-content/uploads/2021/09/smart-german-shepherd-2.png" alt=""/>
+            <div class="item-title">
+              <div class="transparent-back"></div>
+              <div class="title-text"><p>Event Management</p><p> </p></div>
+            </div>
+          </div></a>
+        </div>
+      </div>
+    </section>
+    <!--Circle code End -->
+
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <p class="popular">Popular</p>
+              <h3>Business Plan</h3>
+              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li><i class="bi bi-check"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
+                <li><i class="bi bi-check"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call<br></h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="/templates/forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+                <label>
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </label>
+            </div>
+
+            <div class="col-md-6 ">
+                <label>
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </label>
+            </div>
+
+            <div class="col-md-12">
+                <label>
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </label>
+            </div>
+
+            <div class="col-md-12">
+                <label>
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </label>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+    
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Paws 2 U</h3>
+      <p>Dogs are not our whole life, But they make your life whole - Robert Wagner</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright :</span> <strong class="px-1 sitename">Folio</strong> <span>All Rights Reserved-2024</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a>Subbu</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+<!--
+  <script src="/templates/Static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/templates/Static/vendor/php-email-form/validate.js"></script>
+  <script src="/templates/Static/vendor/aos/aos.js"></script>
+  <script src="/templates/Static/vendor/typed.js/typed.umd.js"></script>
+  <script src="/templates/Static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/templates/Static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/templates/Static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/templates/Static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+-->
+
+  <!-- Main JS File -->
+<script src="{% static '/js/main.js' %}"></script>
+
+
+</body>
+
+</html>

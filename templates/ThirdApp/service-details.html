@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PAW Breeds</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="https://nsubbu123.pythonanywhere.com/static/images/logo1.png" rel="icon">
+  <link href="https://nsubbu123.pythonanywhere.com/static/images/logo1.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+      <link rel="stylesheet" href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/bootstrap-icons/bootstrap-icons.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/aos/aos.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/swiper/swiper-bundle.min.css' %}">
+      <link rel="stylesheet" href="{% static '/vendor/glightbox/css/glightbox.min.css' %}">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="{% static '/css/main.css' %}">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="service-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/Home" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="https://nsubbu123.pythonanywhere.com/static/images/logo1.png" alt="logo1">
+        <h1 class="sitename">PAW 2 U</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+          <li><a href="/Home">Home</a></li>
+          <li><a href="#about/">About</a></li>
+          <li><a href="#services/">Services</a></li>
+          <li><a href="#portfolio/">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact/">Contact</a></li>
+        </ul>
+      
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Breeds</h1>
+        <p>“No matter how you’re feeling, a little dog gonna love you.” – Waka Flocka Flame</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/Home">Home</a></li>
+            <li class="current">Breeds</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container1">
+
+        <div class="row gy-5">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="service-box">
+              <h4>Serices List</h4>
+
+            <div class="services-list grid-container1 sidebar1">
+              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <a class="active"><span>Breeds</span></a>
+              <a href="#German_Shepherd"><i class="bi bi-arrow-right-circle"></i><span>German Shepherd</span></a>     
+              <a href="#Lab"><i class="bi bi-arrow-right-circle"></i><span>Labrador Retriever</span></a>
+              <a href="#Golden_Retriever"><i class="bi bi-arrow-right-circle"></i><span>Golden Retriever</span></a>
+              <a href="#Husky"><i class="bi bi-arrow-right-circle"></i><span>Siberian Husky</span></a>
+              <a href="#Bull"><i class="bi bi-arrow-right-circle"></i><span>Bulldog</span></a>
+              <a href="#Doberman"><i class="bi bi-arrow-right-circle"></i><span>Doberman-pinscher</span></a>
+              <a href="#Greyhound"><i class="bi bi-arrow-right-circle"></i><span>Greyhound</span></a>
+              <a href="#Pug"><i class="bi bi-arrow-right-circle"></i><span>PUG</span></a>
+              <a href="#Dalmatian"><i class="bi bi-arrow-right-circle"></i><span>Dalmatian</span></a>
+              <a href="#Rottweiler"><i class="bi bi-arrow-right-circle"></i><span>Rottweiler</span></a>
+              <a href="#Beagle"><i class="bi bi-arrow-right-circle"></i><span>Beagle</span></a>
+
+              </ul>
+            </div> 
+          </div><!-- End Services List -->
+        
+            <div class="service-box sidebar1 container">
+              <h4>Download Catalog</h4>
+              <div class="download-catalog">
+                <a href="https://academics.lmu.edu/media/lmuacademics/cures/urbanecolab/module09/Dog%20Body%20Language.pdf"><i class="bi bi-filetype-pdf"></i><span>Dog Body Language</span></a>
+                <a href="https://academics.lmu.edu/media/lmuacademics/cures/urbanecolab/module09/Dog%20Body%20Language.pdf"><i class="bi bi-file-earmark-word"></i><span>Dog Body Language</span></a>
+              </div>
+            </div><!-- End Services List -->
+                
+            <div class="help-box d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-headset help-icon"></i>
+              <h4>Have a Question?</h4>
+              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+91 9876543210</span></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@paw.com">contact@paw.com</a></p>
+            </div>
+
+          </div>
+          
+          <div class="col-lg-8 ps-lg-5 grid-container1 sidebar1" data-aos="fade-up" data-aos-delay="200">
+            <section>
+              <img src="https://cdn.britannica.com/74/252374-050-AD45E98E/dog-breed-height-comparison.jpg" alt="" class="img-fluid services-img">
+            <h3>Nutrition and growth</h3>
+            <p>
+              Puppies need three basic things in order to thrive: good nutrition, warmth, and companionship. Puppies need to eat three or four times a day from the time they are weaned until they are about six months old. Thereafter they can be fed twice a day until maturity and once daily after that. However, many dog owners, especially those with large breeds, feed twice a day throughout the dog’s life (this does not mean feeding more than the required daily amount, but it is a more balanced method of feeding).
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Role in human societies</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Physical traits and functions</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Behavioral development</span></li>
+            </ul>
+            <p>
+              A dog has a <strong>strong power of smell</strong>. They are more liked by people because of their faithfulness. They are intelligent, they are watchfulness. The dogs have many colors such as grey, white, black, brown and red. They are of many kinds such as bloodhound, greyhound, german shepherd, Labrador, Rottweiler, bulldog poodle, etc.   
+            </p>
+            <p>
+              <strong>lifespan of a dog</strong> is very small however it can live around 12-15 years long which depend on their size such as smaller dogs lives a longer life. A female dog gives birth to a baby and feed milk that’s why dogs under the mammal category. The dog baby is called a puppy or pup and dog home is called kennel. Dogs are categorized according to their service to people such as guard dogs, herding dogs, hunting dogs, police dogs, guide dogs, sniffer dogs, etc. It has a strong power of smell with the assistance of police can arrest murderers, thieves, and dacoits. The Military trains the dogs to track and detect bombs.           
+            </p>
+            <p>
+              <strong>Conclusion </strong>Dogs are a very excellent swimmer. They are really a very helpful pet animal. He respects his owner from the heart and can easily guess his/ her presence through their smell. We should take good care of it and keep them in good condition.
+            </p>
+
+          <section id="German_Shepherd">
+                <h3 style="color:#ca905dcb">German Shepherd</h3>
+                <img src="https://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-puppies.jpg" alt="">
+                <br/> <p>
+                  German shepherds don’t just make great police and search and rescue dogs—they also make for loving house pets. German shepherds are “high-energy and have more of a protective side,” according to DeMarco. He also adds that they’re highly intelligent and require lots of mental stimulation.
+                  <br/><br/>
+                  “With smart breed dogs, they tend to be more mischievous because they get bored easier,” DeMarco says. To prevent this, you can stimulate your dog through training, sports, chew toys or nose work games.
+                  <br/><br/>
+                  German shepherds also respond well to commands, and are keen on having various “jobs.” The American Kennel Club describes them as “dogkind’s finest all-purpose worker.”
+                </p>
+          </section>
+           
+          <section id="Lab">
+              <h3 style="color:#ca905dcb">Labrador Retriever</h3>
+              <img src="https://media.istockphoto.com/id/1069531070/photo/groups-of-dogs-labrador-puppies-puppy-chocolate-labrador-retriever-in-front-of-white.jpg?s=612x612&w=0&k=20&c=JplDyHWDC0stouz_ddSAE4HHXBHRXd-jlFRbPBgdS38=" alt=""><br/><br/>
+              <p>
+                The Labrador retriever has long been synonymous with the perfect family dog. As playful, energetic and loyal dogs, they’re ideal for almost any living situation. They’re also easy to train since they’re eager to please their owners.
+                <br/><br/>
+                An intelligent dog with boundless energy, the Labrador retriever will need a good amount of space and time to exercise. More than two hours of exercise per day is recommended for this breed, according to The Kennel Club. They also need mental stimulation—think puzzle feeders or toys, training and sports.
+                <br/><br/>
+                Labs have a thick double coat so they are prone to shedding, but you can reduce this by brushing them at least once per week. During high-shedding seasons like spring and fall, you may need to brush them daily.</p>
+          </section>
+
+          <section id="Golden_Retriever">
+                <h3 style="color:#ca905dcb">Golden Retriever</h3>
+                <img src="https://www.akc.org/wp-content/uploads/2017/11/Golden.puppy_.jpg" alt=""><br/><br/>
+                <p>
+                  Golden retrievers, similar to their labrador counterparts, are also wonderful family companions. Gentle and friendly, these dogs are known for their affectionate and loving demeanor.
+                  <br/><br/>
+                  When it comes to exercise, goldens need more than two hours a day, per The Kennel Club. These smart and active dogs love playing fetch and swimming. They also require mental stimulation and do well with training.
+                  <br/><br/>
+                  Goldens have a longer and thicker coat than labradors, making them high shedders. It’s recommended to brush them daily or at least twice per week.   
+                </p>
+          </section>
+
+          <section id="Husky">
+                <h3 style="color:#ca905dcb">Siberian Husky</h3>
+                <img src="https://www.akc.org/wp-content/uploads/2017/11/Two-Siberian-Husky-puppies.jpg" alt=""><br/><br/>
+                <p>
+                  Siberian Husky, a thickly coated, compact sled dog of medium size and great endurance, was developed to work in packs, pulling light loads at moderate speeds over vast frozen expanses. 
+                <br/><br/>
+                The graceful, medium-sized Siberian Husky's almond-shaped eyes can be either brown or blue'and sometimes one of each'and convey a keen but amiable and even mischievous expression.
+              <br/><br/>
+              Blue eyes in Siberian Huskies are caused by a different genetic mutation than other dog breeds.</p>
+          </section>
+
+          <section id="Bull">
+              <h3 style="color:#ca905dcb">Bulldog</h3>
+              <img src="https://www.akc.org/wp-content/uploads/2017/11/Bulldog-puppies.jpg" alt=""><br/><br/>
+              <p>
+                Bulldogs are low-energy, and often referred to as lazy, says DeMarco. Bulldogs are more likely to join you on the couch to watch your favorite movie than to accompany you on a long run.
+                <br/><br/>
+                Bulldogs need up to one hour per day of exercise, according to The Kennel Club. Daily walks and some games around the house should be sufficient. Similar to their Frenchie counterparts, bulldogs are a flat-faced breed, which places them at high risk of heat stroke. Also, bulldogs are not good swimmers, so be sure to keep an extra eye on them around a pool or lake.
+                <br/><br/>
+                Bulldogs are also prone to skin fold dermatitis, cherry eye, dry eye, entropion and mange.
+              </p>
+            </section>
+
+            <section id="Doberman">
+              <h3 style="color:#ca905dcb">Doberman pinscher</h3>
+              <img src="https://www.akc.org/wp-content/uploads/2017/11/Doberman-Pinscher-puppies.jpg" alt=""><br/><br/>
+              <p>
+                Doberman pinschers are one of the bigger dogs on this list with a misunderstood reputation of being aggressive. But “for the most part, their native personality is not aggressive,” Stelow says. “Dobermans are lovely dogs. People who expect and train them to be guard dogs, [that’s when] they can become aggressive.”
+                <br/><br/>
+                Dobermans otherwise can make great family pets. Training and socialization are essential with big-breed dogs so they can behave properly and you can have more control over them in social settings such as dog parks.
+                <br/><br/>
+                Dobermans have a short coat with average shedding, so they won’t need much upkeep besides weekly brushing.
+              </p>
+            </section>
+
+            <section id="Greyhound">
+              <h3 style="color:#ca905dcb">Greyhound</h3>
+              <img src="https://www.akc.org/wp-content/uploads/2017/11/Greyhound-puppy-laying-down-outdoors.jpg" alt=""><br/><br/>
+              <p>
+                The champion sprinter of dogdom, the Greyhound is a gentle, noble, and sweet-tempered companion with an independent spirit. For thousands of years these graceful hounds have been an object of fascination for artists, poets, and kings.
+                 <br/><br/>
+                 Greyhounds are perfectly constructed for high-speed pursuit. The lean beauty of the Greyhound 'inverted S' shape.
+                 <br/><br/>
+                 Greyhounds are the template from which other coursing hounds have been struck.
+              </p>
+            </section>
+
+            <section id="Pug">
+              <h3 style="color:#ca905dcb">PUG</h3>
+              <img src="https://www.akc.org/wp-content/uploads/2017/11/Pug-puppy-standing-in-profile-on-a-white-background.jpg" alt=""><br/><br/>
+              <p>
+                The small but solid Pug is today adored by his millions of fans around the world. Pugs live to love and to be loved in return.
+                 <br/><br/>
+                 The large round head, the big, sparkling eyes, and the wrinkled brow give Pugs a range of human-like expressions'surprise, happiness, curiosity'that have delighted owners for centuries.
+                 <br/><br/>
+                 Pugs are happy in the city or country, with kids or old folks, as an only pet or in a pack. 
+              </p>
+            </section>
+
+            <section id="Dalmatian">
+              <h3 style="color:#ca905dcb">Dalmatian</h3>
+              <img src="https://www.akc.org/wp-content/uploads/2017/11/Dalmatian-puppies-sitting-in-a-row.jpg" alt=""><br/><br/>
+              <p>
+                The Dalmatian's delightful, eye-catching spots of black or liver adorn one of the most distinctive coats in the animal kingdom.
+                <br/><br/>
+                Dals can be aloof with strangers and are dependable watchdogs. With their preferred humans, Dals are bright, loyal, and loving house dogs.
+                <br/><br/>
+                They are strong, active athletes with great stamina'a wonderful partner for runners and hikers.
+              </p>
+            </section>
+
+            <section id="Rottweiler">
+              <h3 style="color:#ca905dcb">Rottweiler</h3>
+              <img src="https://www.akc.org/wp-content/uploads/2017/11/Rottweiler-puppy-6-weeks-old-sitting-on-a-white-background.jpg" alt=""><br/><br/>
+              <p>
+                Rottweilers are in the working group of dog breeds, meaning that they thrive when they have an activity or “job.” Combined with their protective and alert nature, they make excellent watch or guard dogs. Despite this, they’re also a loving and loyal breed—with proper training and socialization, a rottie’s territorial instincts can be controlled.
+                <br/><br/>
+                A rottweiler is a big dog, typically standing between 22 to 27 inches and weighing between 80 to 135 pounds. They’re an active breed and are great for accompanying you on a jog or long walks, and they also enjoy games and sports.
+                <br/><br/>
+                Despite their protective nature, rottweilers aren’t known for being a very vocal breed. You won’t hear them bark much outside of protecting their territory and loved ones.
+              </p>
+            </section>
+
+          <section id="Beagle">
+            <h3 style="color:#ca905dcb">Beagle</h3>
+            <img src="https://www.akc.org/wp-content/uploads/2017/11/Beagle-Puppy.jpg" alt=""><br/><br/>
+            <p>
+              Beagles are known for their floppy ears and colorful coats. Their personalities tend to be described as loveable, happy and curious. They’re part of the hound group and are often used as scent-detection dogs at airports.
+              <br/><br/>
+              Beagles are also an energetic breed and will need plenty of stimulation to thrive. Due to their keen nose, they may enjoy mental challenges with snuffle mats (a mat that can hide treats). Their preferred exercise is long walks with plenty of opportunities to sniff and explore. Just be sure to keep your dog’s leash short, as a beagle’s curiosity is known to make it wander.
+              <br/><br/>
+              Beagles have a low-maintenance coat with an average amount of shedding and require brushing just once a week.
+            </p>
+          </section>
+
+
+            
+          </section>
+
+        </div>
+
+        </div>
+
+      </div>
+      
+   
+    </section><!-- /Service Details Section -->
+
+  
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Paw 2 U</h3>
+      <p>Dogs are not our whole life, But they make your life whole - Robert Wagner</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright :</span> <strong class="px-1 sitename">PAW 2 U</strong> <span>All Rights Reserved-2024</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="#">Subbu</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static '/vendor/aos/aos.js' %}"></script>
+  <script src="{% static '/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static '/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static '/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static '/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static '/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+<script src="{% static '/js/main.js' %}"></script>
+
+</body>
+
+</html>
